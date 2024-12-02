@@ -13,11 +13,11 @@ export default function Chat() {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  const { resolvedTheme } = useTheme();
+
   if (!chatClient) {
     return <Loader2 className="mx-auto my-3 animate-spin" />;
   }
-
-  const { resolvedTheme } = useTheme();
 
   return (
     <main className="relative w-full overflow-hidden rounded-2xl bg-card shadow-sm">
