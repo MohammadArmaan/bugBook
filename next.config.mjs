@@ -19,7 +19,7 @@ const nextConfig = {
   rewrites: () => {
     return [
       {
-        source: "/hastag/:tag",
+        source: "/hashtag/:tag",
         destination: "/search?q=%23:tag",
       },
     ];
